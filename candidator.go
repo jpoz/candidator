@@ -110,6 +110,7 @@ func CommentOutput(payload github.WebHookPayload, output *bytes.Buffer) error {
 }
 
 func main() {
+	fmt.Printf("Starting UP")
 	publicFileServer := http.FileServer(http.Dir("./public"))
 	http.Handle("/", publicFileServer)
 	http.HandleFunc("/webhook", webhookHandler)

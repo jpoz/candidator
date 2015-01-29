@@ -1,1 +1,0 @@
-web: candidator -port=$PORT
